@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+    <div id="app">
+        <h1>Login</h1>
+
+        <button @@click="LineLogin()">Line登入</button>
+        <button @@click="FacebookLogin()">Facebook登入</button>
+    </div>
+<script>
+    var vm = new Vue({
+        el: '#app',
+        methods: {
+            LineLogin: function () {
+                $.ajax({
+                    url: "@Url.ActionLink("LineLogin","Login")",
+                    async: false,
+                    type: "post",
+                    error: function (xhr) { },
+                    success: function (response) {
+                        console.log(response);
+                        location.href=response.data;
+                    }
+                });
+            },
+            FacebookLogin: function () {
+                $.ajax({
+                    url: "@Url.ActionLink("FacebookLogin","Login")",
+                    async: false,
+                    type: "post",
+                    error: function (xhr) { },
+                    success: function (response) {
+                        console.log(response);
+                        location.href=response.data;
+                    }
+                });
+            }
+        },
+    })
+</script>

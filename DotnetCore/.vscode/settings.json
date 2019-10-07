@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/f49994cb-5581-4e57-9788-32a2f4a73b80/resourceGroups/WebService/providers/Microsoft.Web/sites/RightTY",
+    "appService.deploySubpath": "publish"
+}

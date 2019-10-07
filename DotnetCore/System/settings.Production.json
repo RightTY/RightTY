@@ -1,0 +1,14 @@
+{
+  "Line": {
+    "LineLogin": {
+      "RightTY": {
+        "Authorize": {
+          "RedirectUri": "https://right-ty.azurewebsites.net/Home/LineLogin"
+        }
+      },
+      "Token": {
+        "RedirectUri": "https://right-ty.azurewebsites.net/Home/LineLogin"
+      }
+    }
+  }
+}

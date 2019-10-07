@@ -1,0 +1,58 @@
+@{
+    ViewData["Title"] = "Dependency Injection Lifetimes Example";
+}
+
+<style>
+    table tr td {
+        padding: 5px;
+    }
+    table tr td:first-child {
+        text-align: right;
+        font-weight: bold;
+    }
+</style>
+
+<h2>生命周期範例</h2>
+<hr />
+
+<h3>Controller Operations</h3>
+<table>
+    <tr>
+        <td>Transient</td>
+        <td>@ViewBag.Transient.OperationId</td>
+    </tr>
+    <tr>
+        <td>Scoped</td>
+        <td>@ViewBag.Scoped.OperationId</td>
+    </tr>
+    <tr>
+        <td>Singleton</td>
+        <td>@ViewBag.Singleton.OperationId</td>
+    </tr>
+    <tr>
+        <td>SingletonInstance</td>
+        <td>@ViewBag.SingletonInstance.OperationId</td>
+    </tr>
+</table>
+
+<hr />
+
+<h3>OperationService Operations</h3>
+<table>
+    <tr>
+        <td>Transient</td>
+        <td>@ViewBag.Service.TransientOperation.OperationId</td>
+    </tr>
+    <tr>
+        <td>Scoped</td>
+        <td>@ViewBag.Service.ScopedOperation.OperationId</td>
+    </tr>
+    <tr>
+        <td>Singleton</td>
+        <td>@ViewBag.Service.SingletonOperation.OperationId</td>
+    </tr>
+    <tr>
+        <td>SingletonInstance</td>
+        <td>@ViewBag.Service.SingletonInstanceOperation.OperationId</td>
+    </tr>
+</table>

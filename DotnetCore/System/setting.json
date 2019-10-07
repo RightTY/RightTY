@@ -1,0 +1,52 @@
+{
+  "DB": {
+    "ConnectionStrings": {
+      "DefaultConnection": "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\\\Git\\RightTY\\DotnetCore\\DB\\RightTY_DB.mdf;Integrated Security=True"
+    }
+  },
+  "Line": {
+    "LineLogin": {
+      "RightTY": {
+        "ClientId": "1570875920",
+        "ClientSecret": "2aedecef76fea2de4e75161bd7dcc55a",
+        "Authorize": {
+          "Scope": "profile%20openid%20email",
+          "AuthorizeUri": "https://access.line.me/oauth2/v2.1/authorize",
+          "RedirectUri": "https://localhost:44324/Home/LineLogin",
+          "ResponseType": "code",
+          "State": "",
+          "Nonce": "",
+          "Prompt": "consent",
+          "Max_age": 0,
+          "UiLocales": "",
+          "BotPrompt": ""
+        },
+        "Token": {
+          "RedirectUri": "https://localhost:44324/Home/LineLogin",
+          "TokenUri": "https://api.line.me/oauth2/v2.1/token",
+          "GrantType": "authorization_code"
+        },
+        "Profile": {
+          "ProfileUri": "https://api.line.me/v2/profile"
+        }
+      }
+    }
+  },
+  "Facebook": {
+    "FacebookLogin": {
+      "RightTY": {
+        "ClientId": "2681631938566058",
+        "ClientSecret": "ea93775808d1776ff5f41f3346e761c9",
+        "Oauth": {
+          "OauthUri": "https://www.facebook.com/v4.0/dialog/oauth",
+          "RedirectUri": "https://localhost:44324/Home/FacebookLogin",
+          "State": ""
+        },
+        "Token": {
+          "TokenUri": "https://graph.facebook.com/v4.0/oauth/access_token",
+          "RedirectUri": "https://localhost:44324/Home/FacebookLogin"
+        }
+      }
+    }
+  }
+}
